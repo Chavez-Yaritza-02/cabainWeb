@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .portada {
+    background: url("img/portada.jpg") no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    position: relative;
+  }
+  
+  .portada h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px #000;
+    margin-bottom: 40px;
+  }
+  
+  .botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .boton {
+    background-color: #f5ff00;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .boton:hover {
+    transform: scale(1.05);
+    background-color: #ffff5e;
+  }
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #f9f9f9;
+  }
+  
+  /* Portada principal */
+  .portada {
+    background-image: url(img/portada.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 4em;
+    color: #f1ff5c;
+    text-shadow: 2px 2px 6px #000;
+    margin-bottom: 40px;
+  }
+  
+  /* Botones del menú */
+  .botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .boton {
+    background-color: #f1ff5c;
+    border: none;
+    border-radius: 40px;
+    padding: 15px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .boton:hover {
+    background-color: #dbe900;
+    transform: scale(1.05);
+  }
+  
+  /* Secciones generales */
+  .seccion, #terminos, #filosofia, #sobre-nosotros {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 60px 80px;
+    background-color: #ffffffcc;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Encabezados */
+  .seccion h2,
+  #terminos h2,
+  #filosofia h2,
+  #sobre-nosotros h2 {
+    font-size: 1.9em;
+    margin-bottom: 20px;
+    color: #50a956;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .seccion h3,
+  #terminos h3,
+  #filosofia h3,
+  #sobre-nosotros h3 {
+    font-size: 1.3em;
+    margin-top: 30px;
+    color: #333;
+    border-left: 5px solid rgb(9, 141, 0);
+    padding-left: 10px;
+  }
+  
+  .seccion p,
+  #terminos p,
+  #filosofia p,
+  #sobre-nosotros p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  /* Emoji al lado del título */
+  #terminos h2::before {
+    content: "📁";
+  }
+  
+  /* Catálogo */
+  #catalogo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  .cabaña {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .cabaña img {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cabaña strong {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Botón "ver más" */
+  .btn-vermas, .boton-vermas {
+    display: inline-block;
+    background-color: #faff57;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .btn-vermas:hover, .boton-vermas:hover {
+    background-color: #f5f031;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .cabaña {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .cabaña img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .galeria img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    #terminos, #filosofia, #sobre-nosotros {
+      padding: 30px 20px;
+    }
+  
+    h1 {
+      font-size: 2.5em;
+    }
+  }  
