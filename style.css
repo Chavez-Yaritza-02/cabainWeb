@@ -27,20 +27,24 @@ body {
   }
   
   .boton {
-    background-color: #f5ff00;
-    color: #000;
+    background-color: #ffffff; /* blanco */
+    border: none;
+    border-radius: 40px;
+    padding: 15px 30px;
+    font-size: 1em;
     font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
-    transition: transform 0.2s ease-in-out;
+    color: #000000; /* texto negro */
   }
   
+  
   .boton:hover {
+    background-color: #eeeeee;
     transform: scale(1.05);
-    background-color: #ffff5e;
   }
+  
 /* Reset general */
 * {
     margin: 0;
@@ -57,7 +61,7 @@ body {
   
   /* Portada principal */
   .portada {
-    background-image: url(img/portada.png);
+    background-image: url(img/portada.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -71,7 +75,7 @@ body {
   
   h1 {
     font-size: 4em;
-    color: #f1ff5c;
+    color: #ffffff;
     text-shadow: 2px 2px 6px #000;
     margin-bottom: 40px;
   }
@@ -84,8 +88,9 @@ body {
     justify-content: center;
   }
   
+   
   .boton {
-    background-color: #f1ff5c;
+    background-color: #ffffff; /* blanco */
     border: none;
     border-radius: 40px;
     padding: 15px 30px;
@@ -94,13 +99,15 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
-    color: #000;
+    color: #000000; /* texto negro */
   }
   
+  
   .boton:hover {
-    background-color: #dbe900;
+    background-color: #659cc6;
     transform: scale(1.05);
   }
+  
   
   /* Secciones generales */
   .seccion, #terminos, #filosofia, #sobre-nosotros {
@@ -120,7 +127,7 @@ body {
   #sobre-nosotros h2 {
     font-size: 1.9em;
     margin-bottom: 20px;
-    color: #50a956;
+    color: #6382b9;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -133,7 +140,7 @@ body {
     font-size: 1.3em;
     margin-top: 30px;
     color: #333;
-    border-left: 5px solid rgb(9, 141, 0);
+    border-left: 5px solid rgb(127, 134, 213);
     padding-left: 10px;
   }
   
@@ -193,7 +200,7 @@ body {
   /* Botón "ver más" */
   .btn-vermas, .boton-vermas {
     display: inline-block;
-    background-color: #faff57;
+    background-color: #ffffff;
     color: #000;
     font-weight: bold;
     padding: 10px 20px;
@@ -205,7 +212,7 @@ body {
   }
   
   .btn-vermas:hover, .boton-vermas:hover {
-    background-color: #f5f031;
+    background-color: #5d8fa9;
     transform: scale(1.05);
   }
   
