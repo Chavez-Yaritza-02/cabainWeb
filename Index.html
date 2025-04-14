@@ -17,48 +17,84 @@
     <div class="portada">
         <h1>ALQUILER DE CABAÑAS CHÁVEZ</h1>
         <div class="botones">
-          <a href="#sobre-nosotros" class="boton">SOBRE NOSOTROS</a>
+          <a href="#catalogo" class="boton">CATÁLOGO</a>
+          <a href="#reservacion" class="boton">RESERVACIONES</a>
           <a class="boton" href="https://wa.me/c/5213312726618" target="_blank">CONTACTANOS</a>
           <a href="#terminos" class="boton">TÉRMINOS Y CONDICIONES</a>
-          <a href="#filosofia" class="boton">NUESTRA FILOSOFÍA</a>
-          <a href="#catalogo" class="boton">CATÁLOGO</a>
+          <a href="#testimonios" class="boton">TESTIMONIOS</a>
         </div>
       </div>
       
 
   <section id="catalogo" class="seccion">
+
     <div class="cabaña">
       <img src="img/apolo1.jpg" alt="Cabaña Apolo" width="100">
       <strong>Cabaña Apolo</strong>  Capacidad para 12 personas<br>
       <a href="cabana-apolo.html" class="btn-vermas">ver más</a>
+     
+
     </div>
   
     <div class="cabaña">
       <img src="img/rio6.jpg" alt="Cabaña Río de la Montaña" width="100">
       <strong>Cabaña Río de la Montaña</strong>  Capacidad para 10 personas<br>
       <a href="cabana-rio.html" class="btn-vermas">ver más</a>
+     
+
     </div>
   
     <div class="cabaña">
       <img src="img/loma12.jpg" alt="Cabaña Loma Alta" width="100">
       <strong>Cabaña Loma Alta</strong>  Capacidad para 12 personas<br>
       <a href="cabana-lomaA.html" class="btn-vermas">ver más</a>
+    
+
     </div>
   
     <div class="cabaña">
       <img src="img/lindo20.jpg" alt="Cabaña Lindo Amanecer" width="100">
       <strong>Cabaña Lindo Amanecer</strong>  Capacidad para 8 personas<br>
       <a href="cabana-lindoA.html" class="btn-vermas">ver más</a>
+      
+
     </div>
 
     <div class="cabaña">
-        <img src="img/duplex3.jpg" alt="Cabaña Duplex" width="100">
+        <img src="img/duplex0.jpg" alt="Cabaña Duplex" width="100">
         <strong>Cabaña Duplex</strong>  Capacidad para 20 personas<br>
         <a href="cabana-duplex.html" class="btn-vermas">ver más</a>
-      </div>
-  </section>
+        
 
+      </div>
+     
+
+  </section>
+  <section id="reservacion" class="seccion">
+    <h2>📅 Reservación</h2>
+    <form id="formulario-reserva">
+      <label for="nombre">👤 Nombre:</label>
+      <input type="text" id="nombre" required>
+  
+      <label for="personas">👥 Número de personas:</label>
+      <input type="number" id="personas" min="1" required>
+  
+      <label for="fecha">📆 Fecha de entrada:</label>
+      <input type="date" id="fecha" required>
+  
+      <label for="dias">🌙 Noches de estancia:</label>
+      <input type="number" id="dias" min="1" required>
+  
+      <label for="mensaje">💬 Mensaje adicional:</label>
+      <textarea id="mensaje" rows="3"></textarea>
+  
+      <button type="submit" class="boton">Reservar por WhatsApp</button>
+    </form>
+  </section>
+  
   <section id="terminos">
+    
+
         <h2>📑 TÉRMINOS Y CONDICIONES DE ALQUILER – ALQUILER DE CABAÑAS CHÁVEZ</h2>
         <p>Última actualización: 5 de abril de 2025</p>
         <p>Bienvenido(a) a Alquiler de Cabañas Chávez. Al acceder a este sitio web y realizar una reserva, aceptas los siguientes términos y condiciones. Te pedimos que los leas con atención antes de continuar.</p>
@@ -98,6 +134,55 @@
         <p>Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento. Los cambios se harán efectivos al ser publicados en esta misma página.</p>
     </section>
 
+    <section id="testimonios" class="seccion">
+      <h2>🗣️ Opiniones de nuestros huéspedes</h2>
+    
+      <div class="testimonio">
+        <p>"La cabaña estaba hermosa, muy limpia y equipada. La chimenea fue lo mejor de la noche." <br>
+        ⭐⭐⭐⭐⭐</p>
+        <span>— Andrea M.</span>
+      </div>
+    
+      <div class="testimonio">
+        <p>"Un lugar perfecto para desconectarse y convivir con la familia. ¡Volveremos pronto!" <br>
+        ⭐⭐⭐⭐⭐</p>
+        <span>— Luis y familia</span>
+      </div>
+    
+      <div class="testimonio">
+        <p>"Excelente atención y la ubicación es muy tranquila. 100% recomendado." <br>
+        ⭐⭐⭐⭐⭐</p>
+        <span>— Carla R.</span>
+      </div>
+    </section>
+    <section id="deja-tu-opinion" class="seccion">
+      <h2>✍️ ¡Deja tu opinión!</h2>
+      <form id="form-testimonio">
+        <label for="nombre-op">👤 Tu nombre:</label>
+        <input type="text" id="nombre-op" required>
+    
+        <label for="mensaje-op">💬 Tu experiencia:</label>
+        <textarea id="mensaje-op" rows="4" required></textarea>
+    
+        <label for="estrellas">⭐ Calificación (1 a 5 estrellas):</label>
+        <select id="estrellas" required>
+          <option value="⭐">⭐</option>
+          <option value="⭐⭐">⭐⭐</option>
+          <option value="⭐⭐⭐">⭐⭐⭐</option>
+          <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+          <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+        </select>
+    
+        <button type="submit" class="boton">Enviar por WhatsApp</button>
+        <p style="text-align: center; font-size: 0.9em; color: #555;">
+          📸 También puedes adjuntar una foto de tu experiencia al enviarlo por WhatsApp.
+          </p>
+          
+      </form>
+    </section>
+    
+    
+
     <section id="filosofia">
         <h2>🌿 NUESTRA FILOSOFÍA ALQUILER DE CABAÑAS CHÁVEZ</h2>
         <p>En Alquiler de Cabañas Chávez, concebimos el descanso como una necesidad esencial para el bienestar físico, emocional y mental de las personas. Nuestra filosofía nace del deseo de ofrecer un espacio donde la naturaleza, la tranquilidad y la hospitalidad se unan para crear una experiencia verdaderamente significativa. Creemos firmemente que cada huésped merece ser recibido con respeto, atención y cariño, y por eso trabajamos con dedicación para brindar un servicio honesto, accesible y de calidad. Para nosotros, cada estancia es una oportunidad para generar recuerdos positivos, momentos de paz y desconexión del ritmo acelerado de la vida cotidiana. Nuestra filosofía está guiada por los siguientes pilares:</p>
@@ -134,6 +219,46 @@
         <h3>🚩 VISIÓN</h3>
         <p>Ser una empresa reconocida por su excelencia en el servicio, el compromiso con el medio ambiente y el uso de tecnologías innovadoras para mejorar la experiencia del huésped, posicionándonos como una opción confiable y humana para el descanso rural.</p>
   </section>
+  <script>
+    document.getElementById('formulario-reserva').addEventListener('submit', function(e) {
+      e.preventDefault();
+  
+      const nombre = document.getElementById('nombre').value;
+      const personas = document.getElementById('personas').value;
+      const fecha = document.getElementById('fecha').value;
+      const dias = document.getElementById('dias').value;
+      const mensaje = document.getElementById('mensaje').value;
+  
+      const texto = `¡Hola! Me gustaría reservar una cabaña:
+  👤 Nombre: ${nombre}
+  👥 Personas: ${personas}
+  📅 Fecha: ${fecha}
+  🌙 Noches: ${dias}
+  💬 Mensaje: ${mensaje}`;
+  
+      const url = `https://wa.me/5213312726618?text=${encodeURIComponent(texto)}`;
+      window.open(url, '_blank');
+    });
+  </script>
+  <script>
+    document.getElementById('form-testimonio').addEventListener('submit', function(e) {
+      e.preventDefault();
+  
+      const nombre = document.getElementById('nombre-op').value;
+      const mensaje = document.getElementById('mensaje-op').value;
+      const estrellas = document.getElementById('estrellas').value;
+  
+      const texto = `Hola, quiero dejar mi testimonio:
+  👤 Nombre: ${nombre}
+  💬 Opinión: ${mensaje}
+  ⭐ Calificación: ${estrellas}`;
+  
+      const url = `https://wa.me/5213312726618?text=${encodeURIComponent(texto)}`;
+      window.open(url, '_blank');
+    });
+  </script>
+
+</script>
 
 </body>
 </html>
