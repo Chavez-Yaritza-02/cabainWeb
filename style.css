@@ -319,4 +319,56 @@ body {
     width: 100%;
     z-index: 1000;
   }
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
+      padding: 10px;
+    }
   
+    .portada h1 {
+      font-size: 2em;
+      padding: 20px;
+    }
+  
+    .botones {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .seccion {
+      padding: 30px 20px;
+    }
+  
+    .cabaña {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .cabaña img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .galeria {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .modal-contenido {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    form input,
+    form textarea,
+    form select {
+      font-size: 1em;
+    }
+  
+    .boton {
+      width: 100%;
+      padding: 15px;
+      font-size: 1em;
+    }
+  }
+    
